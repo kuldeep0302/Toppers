@@ -1,0 +1,41 @@
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .form_div {
+    margin-right: 18%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .register_page {
+    background-size: contain, 500px;
+  }
+  .form_div {
+    margin-right: 10%;
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .remove_bg_image {
+    background-image: none;
+  }
+  .form_div,
+  .onboarding_div,
+  .onboarding_div_2 {
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .city_icon {
+    gap: 16px;
+  }
+  .city_icon li {
+    width: calc(50% - 8px);
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .cus_modal_width {
+    max-width: 454px;
+  }
+}
