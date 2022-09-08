@@ -10,15 +10,18 @@ import Onboarding8 from './Pages/Onboarding8';
 import Onboarding9 from './Pages/Onboarding9';
 import Register from './Pages/Register';
 import Resetpassword from './Pages/Resetpassword';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return(
-    <div classname="App">
-      <Router>
+    <div class="App">
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Login />} />
+          <Route path='/forgot-password' element={<Resetpassword/>} />
+          <Route path='/Register' element={<Register/>} />
           <Route path='/Onboarding1' element={<Onboarding1 />} />
           <Route path='/Onboarding2' element={<Onboarding2 />} />
           <Route path='/Onboarding3' element={<Onboarding3 />} />
@@ -26,8 +29,10 @@ function App() {
           <Route path='/Onboarding6' element={<Onboarding6 />} />
           <Route path='/Onboarding8' element={<Onboarding8 />} />
           <Route path='/Onboarding9' element={<Onboarding9 />} />
+
         </Routes>
-      </Router>
+        </BrowserRouter>
+      
       {/* <Login /> */}
       {/* <Onboarding1 /> */}
       {/* <Onboarding2 /> */}

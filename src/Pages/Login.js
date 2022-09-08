@@ -6,17 +6,17 @@ function Login(){
         <Fragment>
             <section class="before_login_page login_page remove_bg_image">
       <div class="form_div text-center">
-        <img src="images/Logo.png" alt="" />
+        <img src="assets/images/Logo.png" alt="" />
         <h4 class="common_head">Log in your Account</h4>
         <ol class="login_with">
           <li>
-            <a href=""><img src="images/google.png" alt="" /></a>
+            <a href=""><img src="assets/images/google.png" alt="" /></a>
           </li>
           <li>
-            <a href=""><img src="images/facebook.png" alt="" /></a>
+            <a href=""><img src="assets/images/facebook.png" alt="" /></a>
           </li>
           <li>
-            <a href=""><img src="images/linkedin.png" alt="" /></a>
+            <a href=""><img src="assets/images/linkedin.png" alt="" /></a>
           </li>
         </ol>
         <p class="sub_line">or use your email for registration</p>
@@ -99,20 +99,22 @@ function Login(){
                 </div>
               </div>
               <div class="col-auto">
-                <a
-                  href="javascript:void(0)"
+                <Link
+                  to="/forgot-password"
                   class="forgot_password_link"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
-                  >Forget Password ?</a
-                >
+                  >Forget Password ?</Link>
+                
               </div>
             </div>
           </div>
+          
           <span class="other_option"
-            >New to Toppers United ? <a href=""> Register Now</a>
-          </span>
-        </form>
+          
+            >New to Toppers United ? <Link to="/Register"> Register Now</Link> 
+          </span> 
+        </form> 
       </div>
     </section>
 
